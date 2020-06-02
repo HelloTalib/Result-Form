@@ -1,0 +1,14 @@
+{
+  "name": "education-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node-sass scss/main.scss css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

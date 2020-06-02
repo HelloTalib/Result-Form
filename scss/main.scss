@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: verdana, sans-serif;
+}
+body {
+    background-color: #eee;
+}
+.form {
+    margin: 0 auto;
+    height: 650px;
+    width: 650px;
+    &__inner {
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        background: #fff;
+    }
+    &__header {
+        height: 135px;
+        width: 100%;
+        background: #eee;
+        position: relative;
+        &--left {
+            float: left;
+            width: 25%;
+            .logo {
+                padding: 20px 30px;
+                position: absolute;
+                text-align: center;
+            }
+        }
+        &--right {
+            color: #ffffee;
+            height: 100%;
+            background: #007814;
+            float: right;
+            width: 75%;
+            &--top {
+                h1 {
+                    color: #95e17d;
+                    padding: 18px 0 8px 10px;
+                    font-size: 18px;
+                }
+                img {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            span {
+                background: darken($color: #95e17d, $amount: 20);
+                position: absolute;
+                height: 1px;
+                width: 48%;
+            }
+            &--middle {
+                h1 {
+                    font-size: 16px;
+                    padding: 10px 0 17px 10px;
+                    font-weight: 700;
+                }
+            }
+            &--bottom {
+                margin-right: 5px;
+                background-color: rgb(134, 199, 117);
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-align: right;
+                    float: right;
+                }
+            }
+        }
+    }
+    .form__body {
+        margin: 0 auto;
+        border: 2px solid rgba($color: #000000, $alpha: 0.5);
+        padding: 20px 10px;
+        margin: 20px 35px;
+        &--top {
+            label {
+                font-weight: 800;
+            }
+            select,
+            input {
+                float: right;
+                width: 100%;
+                padding: 5px;
+                margin: 10px 0;
+            }
+        }
+        &--bottom {
+            margin: 0 auto;
+            border: 2px solid rgba($color: #000000, $alpha: 0.5);
+            padding: 20px 10px;
+            margin: 20px 35px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 12px;
+            p {
+                margin-bottom: 10px;
+                color: red;
+            }
+            a {
+                text-decoration: none;
+            }
+        }
+        &__divider {
+            background-color: red;
+            height: 5px;
+        }
+    }
+    .footer {
+        height: 80px;
+        width: 100%;
+        background: #eee;
+        position: relative;
+        text-align: center;
+        color: lighten($color: #000000, $amount: 45%);
+        &__left {
+            float: left;
+            width: 50%;
+            font-size: 10px;
+            margin-top: 35px;
+        }
+        &__right {
+            float: right;
+            width: 50%;
+            margin-top: 20px;
+            font-size: 14px;
+            p {
+                float: left;
+                margin: 12px 0 0 120px;
+            }
+        }
+    }
+}
